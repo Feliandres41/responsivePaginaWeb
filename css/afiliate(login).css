@@ -1,0 +1,442 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* background-color: rgb(131, 133, 133); */
+}
+.cabezera{
+    background-color: rgba(255, 128, 0, 1);
+    height: 120px;
+    width: 100.1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.botonInicio{
+    height: 50px;
+    position: relative;
+    bottom: 13px;
+    background-color: rgba(255, 128, 0, 1);
+    border: none;
+}
+.textoBoton{
+    color: white;
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.informacion{
+    background-color:bisque;
+    height: 505px;
+    display: flex;
+}
+.textoNoAfiliadoAfiliado{
+    display: flex;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+.textoNoAfiliado{
+    color: rgba(255, 146, 38, 1);
+    font-size: 30px;
+    margin-right: 450px;
+    margin-left: 100px;
+}
+.textoAfiliado{
+    color: rgba(131, 0, 0, 1);
+    font-size: 30px;
+}
+.imagenNoAfiliadoAfiliado{
+    margin-left: 700px;
+    display: flex;
+}
+.imagenNoAfiliado{
+    margin-top: 1px;
+}
+.imagenAfiliado{
+    margin-left: 220px;
+    margin-top: 1px;
+}
+
+
+
+.informacionMedio{
+    display: flex;
+    flex-direction: row;
+    height: 850px;
+}
+.textoInformacion{
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+    bottom: 18px;
+}
+.textoInformacion ul{
+    margin-top: 50px;
+}
+.textoInformacionNoAfiliado{
+    background-color: orange;
+    height: 850px;
+    width: 34%;
+    margin-left: 7%;
+    text-align: center;
+}
+.infoNoAfiliado p{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.textoInformacionAfiliado{
+    background-color: rgba(131, 0, 0, 1);
+    color: white;
+    width: 34%;
+    height: 850px;
+    text-align: center;
+}
+.infoAfiliado p{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+
+
+
+/*Editar*/
+.finalBlanco{
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+#metodoDePago,#pse{
+    background-color: rgba(217, 217, 217, 1);
+    height: 80%;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+#metodoDePago h2{
+    color: red;
+    position: relative;
+    top: -8%;
+}
+.elegir{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 6%;
+}
+.pagarConPse h4, .pagarConTarjeta h4{
+    font-size: 200%;
+    color: rgba(131, 0, 0, 1);
+}
+.pagarConPse img, .pagarConTarjeta img{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pagarConTarjeta h4{
+    margin-top: 26%;
+}
+/*Pago con pse*/
+.infoPse img, .infoPse h2{
+    position: relative;
+    left: 60%;
+    top: 20%;
+}
+
+.pagoConPse{
+    display: flex;
+    flex-direction: row;
+}
+.transferenciasPse{
+    background-color: rgba(255, 181, 142, 0.4);
+    width: 60.1%;
+    height: 56.4vh;
+    position: relative;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+}
+.transferenciasPse p{
+    color: rgba(131, 0, 0, 1);
+    font-size: 200%;
+    position: relative;
+    top: -2%;
+}
+.transferenciasPse .identificacion, .transferenciasPse .tipoCliente,.correo {
+    width: 55%;
+    margin-left: 22%;
+    height: 10%;
+    border: none;
+}
+.transferenciasPse .tipoCliente,.correo {
+    margin-top: 5%;
+}
+.etiqueta{
+    position: relative;
+    top: 3.7%;
+    font-size: 150%;
+}
+.transferenciasPse .identificacion,.correo{
+    text-align: center;
+}
+option {
+    text-align: center;
+    font-size: 150%;
+}
+
+input.identificacion::placeholder,input.correo::placeholder{
+    font-size: 150%;
+    color: black;
+}
+.opcionesPse{
+    display: flex;
+}
+#regresarPse{
+    color: rgba(131, 0, 0, 1);
+    position: relative;
+    top: 34%;
+    left: 18%;
+      cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#continuarPse{
+    height: 60%;
+    width:fit-content;
+    font-size: 170%;
+    background-color: rgba(131, 0, 0, 1);
+    color: white;
+    position: relative;
+    top: 55%;
+    left: 30%;
+    border: none;
+      cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* Sección tarjeta */
+#tarjeta {
+    display: none;
+    background-color: rgba(217, 217, 217, 1);
+    height: 80%;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.infoTarjeta img, .infoTarjeta h2 {
+    position: relative;
+    left: 60%;
+    top: 20%;
+}
+
+.pagoConTarjeta {
+    display: flex;
+    flex-direction: row;
+}
+
+.transferenciasTarjeta {
+    background-color: rgba(255, 181, 142, 0.4);
+    width: 60%;
+    height: 59vh;
+    position: relative;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transferenciasTarjeta p {
+    color: rgba(131, 0, 0, 1);
+    font-size: 200%;
+    margin-top: 10px;
+}
+
+.transferenciasTarjeta input {
+    width: 55%;
+    margin: 10px auto;
+    height: 45px;
+    border: none;
+    text-align: center;
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.fila input {
+    width: 40%; 
+    margin: 0;
+}
+
+.opcionesTarjeta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+#regresarTarjeta {
+    color: rgba(131, 0, 0, 1);
+    cursor: pointer;
+    font-size: 120%;
+}
+
+#continuarTarjeta {
+    font-size: 130%;
+    background-color: rgba(131, 0, 0, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+.confirmacion {
+    background: rgba(128, 45, 0, 0.15);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    margin: 100px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    height: 80%;
+}
+
+.confirmacion h1 {
+    font-size: 2.5em;
+    color: #2e7d32; /* verde éxito */
+    margin-bottom: 10px;
+}
+
+.confirmacion p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.confirmacion a {
+    color: #1976d2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.confirmacion a:hover {
+    text-decoration: underline;
+}
+
+.mensaje {
+    font-size: 1em;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Editar*/
+
+
+
+
+
+
+/*Pie de pagina*/
+.pieDePaginaTamaño{
+    background-color: rgba(86, 81, 81, 0.59);
+    width: 100%;
+    height: 300px;
+    
+}
+.pieDePagina{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position: relative;
+    right: -100px;
+}
+.serviciosPie, .contactosPie, .siguenosPie{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 153, 0, 1);
+    color: rgba(255, 153, 0, 1);
+    font-size: 50px;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+.serviciosPie{
+    top: 15px;
+}
+.siguenosPie{
+    top: 15px;
+}
+
+.pieServicios{
+    position: relative;
+    bottom: 25px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    top: -5px;
+    left: 20px;
+}
+
+.pieContactos{
+    position: relative;
+    bottom: 20px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    gap: -100px;
+    bottom: 50px;
+    left: 9px;
+}
+
+.iconos img{
+    width: 10%;
+    margin-left: 40px;
+    position: relative;
+    bottom: 30px;
+}
+#confirmacion h1 p{
+    
+}
+
+
+#pse{
+    display: none;
+}

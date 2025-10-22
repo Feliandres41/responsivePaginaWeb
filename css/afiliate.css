@@ -1,0 +1,196 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* background-color: rgb(131, 133, 133); */
+}
+.cabezera{
+    background-color: rgba(255, 128, 0, 1);
+    height: 120px;
+    width: 100.1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.botonInicio{
+    height: 50px;
+    position: relative;
+    bottom: 13px;
+    background-color: rgba(255, 128, 0, 1);
+    border: none;
+}
+.textoBoton{
+    color: white;
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.informacion{
+    background-color:bisque;
+    height: 505px;
+    display: flex;
+}
+.textoNoAfiliadoAfiliado{
+    display: flex;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+.textoNoAfiliado{
+    color: rgba(255, 146, 38, 1);
+    font-size: 30px;
+    margin-right: 450px;
+    margin-left: 100px;
+}
+.textoAfiliado{
+    color: rgba(131, 0, 0, 1);
+    font-size: 30px;
+}
+.imagenNoAfiliadoAfiliado{
+    margin-left: 700px;
+    display: flex;
+}
+.imagenNoAfiliado{
+    margin-top: 1px;
+}
+.imagenAfiliado{
+    margin-left: 220px;
+    margin-top: 1px;
+}
+
+
+
+.informacionMedio{
+    display: flex;
+    flex-direction: row;
+}
+.textoInformacion{
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+    bottom: 18px;
+}
+.textoInformacion ul{
+    margin-top: 50px;
+}
+.textoInformacionNoAfiliado{
+    background-color: orange;
+    height: 840px;
+    width: 34%;
+    margin-left: 7%;
+    text-align: center;
+}
+.infoNoAfiliado p{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.textoInformacionAfiliado{
+    background-color: rgba(131, 0, 0, 1);
+    color: white;
+    width: 34%;
+    height: 840px;
+    text-align: center;
+}
+.infoAfiliado p{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+
+.finalBlanco{
+    background-color: none;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.finalBlanco p{
+    font-size: 25px;
+}
+.finalBlanco button{
+    background-color: rgba(255, 146, 38, 0);
+    border: none;
+    font-size: 30px;
+    color: rgba(0, 86, 206, 1);
+    font-weight: 600;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.finalBlanco p, .finalBlanco button{
+    position: relative;
+    bottom: 30px;
+}
+
+
+/*Pie de pagina*/
+.pieDePaginaTamaño{
+    background-color: rgba(86, 81, 81, 0.59);
+    width: 100%;
+    height: 300px;
+    
+}
+.pieDePagina{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position: relative;
+    right: -100px;
+}
+.serviciosPie, .contactosPie, .siguenosPie{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 153, 0, 1);
+    color: rgba(255, 153, 0, 1);
+    font-size: 50px;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+.serviciosPie{
+    top: 15px;
+}
+.siguenosPie{
+    top: 15px;
+}
+
+.pieServicios{
+    position: relative;
+    bottom: 25px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    top: -5px;
+    left: 20px;
+}
+
+.pieContactos{
+    position: relative;
+    bottom: 20px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    gap: -100px;
+    bottom: 50px;
+    left: 9px;
+}
+
+.iconos img{
+    width: 10%;
+    margin-left: 40px;
+    position: relative;
+    bottom: 30px;
+}

@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  display: flex;
+}
+
+.fondo{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/login/chica-sosteniendo-el-balon-de-futbol-de-pie-con-su-padre-en-el-parque.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.formulario{
+    background-color: rgba(162, 163, 163, 0.4);
+    height: 600px; /*Altura*/
+    width: 30%;
+    position: absolute;
+    /* left: 50%; */
+    /* position: relative;
+    right: 100px;
+    top: -2%; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 40%;
+    margin: 40px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    top: 20px;
+}
+
+
+
+input::placeholder{
+    text-align: center;
+    color: white;
+    opacity: 0.89;
+}
+#correo,#contraseña,#iniciar{
+    width: 60%;
+    position: relative;
+    background-color: rgba(2, 25, 102, 0.7);
+    height: 50px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 180%;
+    outline: none;
+    text-align: center;
+    border: none;
+    left: 20%;
+}
+#iniciar{
+  font-size: 140%;
+    width: 35%;
+    height: 40px;
+    position: relative;
+    left: 33%;
+    background-color: rgba(35, 107, 202, 0.568);
+    transition: 0.5s;
+}
+
+
+#correo:focus,#contraseña:focus{
+  box-shadow: 0 0 10px rgba(14, 22, 22, 0.404);
+  transform: scale(1.01);
+}
+#correo:hover,#contraseña:hover{
+  box-shadow: 0 0 10px rgba(1, 32, 32, 0.404);
+  transform: scale(1.01);
+  /* transition: 1s; */
+}
+
+#iniciar:active{
+  box-shadow: 0 0 10px rgba(1, 32, 32, 0.404);
+  transform: scale(1.01);
+  transition: 0.01s;
+}
+.recuperar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    color: white;
+}
+h3{
+    font-weight: 200;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 31, 71, 0.74);
+    font-weight: 100;
+    font-size: 130%;
+}
+
+
+body{
+  display: flex;
+}
+/* .final{
+  background-color: #a3ddff;
+  width: 50%;
+} */
+/*iPad pro 1024px*/
+@media (max-width: 1024px){
+
+  .formulario{
+    position: absolute;
+    left: 25%;
+    height: 750px;
+    width: 50%;
+    /* width: 50%; */
+  }
+  .fondo{
+    background-image: url(../img/login/chica-sosteniendo-el-balon-de-futbol-de-pie-con-su-padre-en-el-parque.jpg);
+    width: 100%;
+    background-attachment: fixed; /* hace que el fondo no se mueva al hacer scroll */
+    background-position: -150px 0px; /* X Y */
+  }
+  .logo{
+    width: 150%;
+    position: relative;
+    right: 23%;
+  }
+  .logo img{
+    transition: 0.5s;
+  }
+
+  
+  #correo,#contraseña{
+    position: relative;
+    left: 15%;
+    background-color: rgba(2, 25, 102, 0.7);
+    width: 70%;
+    height: 80px;
+    border-radius: 15px;
+    /* transition: all 0.3s ease; */
+  }
+  #iniciar{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    font-size: 150%;
+  }
+  .recuperar{
+    position: relative;
+    top: 10%;
+    font-size: 120%;
+  }
+}
+#correo,#contraseña,#iniciar{
+  font-size: 1.5em;
+  
+}
+@media (max-width: 430px){
+  .fondo{
+    background-attachment: fixed; /* hace que el fondo no se mueva al hacer scroll */
+    background-position: -250px 0px; /* X Y */
+    background-size: 283%;
+  }
+  .logo img{
+    width: 40%;
+  }
+  .formulario{  
+  width: 90%;
+  position: relative;
+  left: 0%;
+  }
+  #iniciar{
+    top: 10px;
+  }
+}

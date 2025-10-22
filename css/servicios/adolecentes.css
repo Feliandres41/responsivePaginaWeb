@@ -1,0 +1,271 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.cabezera{
+    background-color: rgba(255, 139, 153, 1);
+    width: 100.1%;
+    height: 120px;
+    display: flex;
+}
+.botonCabezera{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 153, 0, 0);
+    border: none;
+    height: 58px;
+    position: relative;
+    left: 1%;
+    top: 32px;
+}
+.botonCabezera img{
+    cursor: pointer;
+}
+.botonCabezera button{
+    border: none;
+}
+.linkBoton{
+    background-color: rgba(255, 153, 0, 0);
+}
+.tituloCabezera{
+    position: absolute;
+    font-size: 35px;
+    left: 32%;
+    top: -3%;
+    color: rgba(255, 0, 55, 1);
+}
+
+
+
+.x{
+    font-size: 300%;
+    height: 1%;
+    color: rgba(146, 23, 40, 1);
+}
+#regresar{
+    cursor: pointer;
+    color: rgba(146, 23, 40, 1);
+}
+.menuNav{
+    background-color: rgba(255, 139, 153, 1);
+    width: 30%;
+    height: 1000%;
+    z-index: 14;
+    justify-items: center;
+}
+.menuNav a{
+    color: rgba(146, 23, 40, 1);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 300%;
+}
+.menuNav p{
+    color: rgba(146, 23, 40, 0.7);
+    font-size: 300%;
+    cursor: default;
+}
+
+
+#menus{
+    display: none;
+}
+
+
+
+.inicioNiños{
+    background-color: rgba(165, 8, 44, 0.73);
+    height: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.niñaInicio{
+    object-fit: cover;
+    position: relative;
+    top: 7%;
+}
+.inicioTexto p{
+    font-size: 250%;
+    width: 100%;
+    color: white;
+    position: relative;
+    right: 10%;
+}
+.espacio{
+    background-color: rgba(146, 23, 40, 1);
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.espacio h2{
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    position: relative;
+    bottom: 27%;
+}
+.guarderia{
+    background-image: url(../../img/servicios/adolecentes/escalamiento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.textoGuarderia{
+    background-color: rgba(190, 75, 101, 0.56);
+    height: 60%;
+    width: 45%;
+    position: relative;
+    top: 22%;
+    left: 55%;
+}
+.textoGuarderia p{
+    color: white;
+    font-size: 200%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 8%;
+}
+
+.parqueInfantil{
+    display: flex;
+    background-image: url(../../img/servicios/adolecentes/kayak.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 101%;
+    height: 70%;
+}
+.textoParqueInfantil{
+    background-color: rgba(190, 75, 101, 0.56);
+    height: 60%;
+    width: 45%;
+    position: relative;
+    top: 22%;
+}
+.textoParqueInfantil p{
+    color: white;
+    font-size: 200%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 8%;
+}
+
+.paseosGuiados{
+    display: flex;
+    background-image: url(../../img/servicios/adolecentes/videojuegos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 101%;
+    height: 70%;
+}
+.textoPaseosGuiados{
+    background-color: rgba(190, 75, 101, 0.56);
+    height: 60%;
+    width: 45%;
+    position: relative;
+    top: 22%;
+    left: 55%;
+}
+.textoPaseosGuiados p{
+    color: white;
+    font-size: 200%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 15%;
+}
+
+.personalEncargado{
+    background-color: rgba(190, 75, 101, 0.56);
+    width: 101%;
+    height: 100%;
+}
+.imagenEncargados{
+    background-image: url(../../img/servicios/adolecentes/campeonato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 101%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.espacioTexto{
+    background-color: rgba(190, 75, 101, 0.56);
+    height: 40%;
+    width: 100%;
+    text-align: center;
+}
+.espacioTexto p{
+    color: white;
+    font-size: 300%;
+    width: 80%;
+    position: relative;
+    margin-left: 8%;
+}
+/*Pie de pagina*/
+.pieDePaginaTamaño{
+    background-color: rgba(86, 81, 81, 0.59);
+    width: 100%;
+    height: 300px;
+    
+}
+.pieDePagina{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position: relative;
+    right: -100px;
+}
+.serviciosPie, .contactosPie, .siguenosPie{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 153, 0, 1);
+    color: rgba(255, 153, 0, 1);
+    font-size: 50px;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+.serviciosPie{
+    top: 15px;
+}
+.siguenosPie{
+    top: 15px;
+}
+
+.pieServicios{
+    position: relative;
+    bottom: 25px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    top: -5px;
+    left: 20px;
+}
+
+.pieContactos{
+    position: relative;
+    bottom: 20px;
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    gap: -100px;
+    bottom: 50px;
+    left: 9px;
+}
+
+.iconos img{
+    width: 10%;
+    margin-left: 40px;
+    position: relative;
+    bottom: 30px;
+}

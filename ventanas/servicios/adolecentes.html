@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios para niños</title>
+    <link rel="stylesheet" href="../../css/servicios/adolecentes.css">
+</head>
+<body>
+    <div class="cabezera">
+        <div class="botonCabezera" id="cabezera">
+            <button class="linkBoton" id="menu"><img src="../../img/servicios/adolecentes/boton.png"></button>
+        </div>
+        <div class="menuNav" id="menus">
+            <p class="x" id="regresar">X</p><br><br><br>
+            <div>
+                <a href="../index.html">Regresar al menu principal</a><br><br><br><br><br><br>
+            </div>
+            <div>
+                <a href="./niños.html">Servicios para niños</a><br><br><br>
+            </div>
+            <div>
+                <p>Servicios para adolecentes</p><br><br>
+            </div>
+            <div>
+                <a href="./adultos.html">Servicios para adultos</a>
+            </div>
+        </div>
+        <div class="tituloCabezera">
+            <h1>Servicios para niños</h1>
+        </div>
+    </div>
+    <div class="inicioNiños">
+        <div class="niñaInicio">
+            <img src="../../img/servicios/adolecentes/adolecentesInicio.png" width="78%">
+        </div>
+        <div class="inicioTexto">
+            <p style="margin-left: 90px;margin-top: 60px;">Deportes extremos, videojuegos,<br><br>
+            competencias y toboganes.<br><br>
+            Un espacio creado para que los adolescentes<br><br>
+            vivan experiencias únicas y se atrevan a más cada día.</p>
+        </div>
+    </div>
+    <div class="espacio">
+        <h2>Escalamientos</h2>
+    </div>
+    <div class="guarderia">
+        <div class="textoGuarderia">
+            <p>Muros verticales con diferentes niveles de dificultad, diseñados para desarrollar fuerza física, equilibrio y concentración. Ideal para quienes buscan desafiar sus propios límites en un entorno seguro y controlado. Instructores supervisan y acompañan cada intento, garantizando una experiencia divertida y segura.</p>
+        </div>
+    </div>
+
+    <div class="espacio">
+        <h2>Kayak</h2>
+    </div>
+    <div class="parqueInfantil">
+        <div class="textoParqueInfantil">
+            <p>Zona recreativa al aire libre diseñada exclusivamente para niños de hasta 10 años, con juegos seguros como columpios, resbaladeras, sube y baja, túneles y áreas interactivas. Todo el espacio está rodeado de protección y supervisión para brindar diversión en un ambiente seguro y natural.</p>
+        </div>
+    </div>
+    
+    <div class="espacio">
+        <h2>Área de videojuegos</h2>
+    </div>
+    <div class="paseosGuiados">
+        <div class="textoPaseosGuiados">
+            <p>Los niños podrán participar en recorridos por las zonas naturales del centro recreacional, como la reserva de animales y los espacios verdes. Estos paseos están guiados por personal del parque que ofrece explicaciones sencillas y divertidas, para que los niños aprendan mientras exploran y se conectan con la naturaleza.</p>
+        </div>
+    </div>
+
+    <div class="espacio">
+        <h2>Campeonato deportivo</h2>
+    </div>
+    <div class="personalEncargado">
+        <div class="imagenEncargados">
+            <div class="espacioTexto">
+                <p>Organizamos competencias deportivas entre adolescentes en disciplinas como fútbol, baloncesto y más. Es una oportunidad para fomentar el trabajo en equipo, la disciplina y la sana competencia. Los eventos son anunciados previamente en el calendario oficial del centro recreacional y en redes sociales.</p>
+            </div>
+        </div>
+    </div>
+    <div class="espacio"></div>
+
+    <div class="pieDePaginaTamaño"><!--Pie de pagina-->
+        <div class="pieDePagina">
+            <div>
+                <h2  class="serviciosPie">Servicios</h2>
+                <div>
+                    <p class="pieServicios">Contamos con estacionamiento para máximo 80 vehículos y 100 motos</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="contactosPie">Contactos</h2>
+                <div class="textoContacto">
+                    <p class="pieContactos">Oficina Principal:</p>
+                    <p class="pieContactos">Calle 13 # 3 – 13 Barrio El 12.</p>
+                    <p class="pieContactos">Fonseca, La Guajira, 47001 Colombia</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="siguenosPie">Siguenos</h2>
+                <div class="iconos">
+                    <img src="../../img/index/twitter.png" class="twitter" alt="twitter">
+                    <img src="../../img/index/facebook.png " class="facebook" alt="Facebook">
+                    <img src="../../img/index/instagram.png" class="instagram" alt="instagram">
+                    <img src="../../img/index/youtube.png" class="youtube" alt="youtube" height="100px">    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let cabezera=document.getElementById('cabezera');
+        let menu=document.getElementById('menu');
+
+        let menus=document.getElementById('menus');
+        let regresar=document.getElementById('regresar');
+
+        menu.addEventListener('click',function(){
+            cabezera.style.display='none';
+            menus.style.display='block';
+        });
+        regresar.addEventListener('click',function(){
+            menus.style.display='none';
+            cabezera.style.display='block';
+        });
+    </script>
+</body>
+</html>

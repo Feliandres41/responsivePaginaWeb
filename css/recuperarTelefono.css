@@ -1,0 +1,133 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.cuadro{
+    background: rgba(186, 185, 198, 0.4);
+    margin-right: 250px;/*Espacio*/
+    /*Tamaño del cuadro*/
+    height: 850px; /*Altura*/
+    width: 900px;
+    justify-items: center;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    position: relative;
+    top: 10px;
+    color: rgba(22, 58, 114, 1);
+    margin: 20px 0;
+}
+
+.arribaIzquierda{
+    background: rgba(102, 88, 156, 0.7);
+    width: 390px;
+    height: 50px;
+    position: relative;
+    top: 4px;
+    border-top-left-radius: 80px;
+}
+
+.arribaDerecha{
+    background: rgba(21, 0, 255, 0.61);
+    width: 390px;
+    height: 50px;
+    position: relative;
+    top: 4px;
+    border-top-right-radius: 80px;
+}
+.cuadroRecuperar{
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    background-color: rgba(22, 58, 114, 0);
+    border: none;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.637);
+}
+.telefono{
+    background-color: rgba(22, 58, 114, 0);
+    border: none;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 120px;
+    color: white;
+}
+
+.cuadroIngreso{
+    background-color: rgba(189, 172, 255, 0.5);
+    height: 600px;
+    width: 780px;
+}
+
+.correo{
+
+    height: 80px;
+    width: 480px;
+    background-color: rgba(93, 83, 146, 1);
+    border: none;
+    position:relative;
+    left: 85px;
+    top: 50px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin: 70px;
+}
+
+input.correo::placeholder{
+    color: white;
+    position: relative;
+    left: 110px;
+    top: 5px;
+    font-size: 30px;
+}
+.codigo{
+    color: white;
+    height: 80px;
+    width: 380px;
+    background-color: rgba(93, 83, 146, 1);
+    border: none;
+    position:relative;
+    left: 190px;
+    top: 100px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    font-size: 25px;
+}
+
+.iniciar{
+    position: relative;
+    bottom: 150px;
+    font-size: 35px;
+}
+
+.boton{
+    font-size: 35px;
+    background-color: rgba(22, 58, 114, 0);
+    border: none;
+}

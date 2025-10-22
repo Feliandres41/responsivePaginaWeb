@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script #1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="cabezera">
+        <div class="logo">
+            <button id="menuLogos"><img src="./img/RECREACIONAL.png" height="200px" class="boton"></button>
+        </div>
+        <div id="logos">
+            <button id="cerrar"><img src="./menuLogos/cerrar.png"></button>
+            <img src="./img/RECREACIONAL.png" height="200px" style="opacity: 70%;">
+            <button id="gym"><img src="./menuLogos/gym.png" height="110px" style="position: relative; right: 5px;"></button>
+            <button id="restaurante"><img src="./menuLogos/restaurant.png" height="130px" style="margin-top: 20px;"></button>
+        </div>
+    </div>
+    <form action="./prueba2.html">
+        <button style="margin-top: 50px;">editar afiliacion</button>
+    </form>
+    <script>
+        let menuLogos=document.getElementById('menuLogos');/*Al darle click al id del id menuLogos*/
+        let menu=document.getElementById('logos');
+        let cerrar=document.getElementById('cerrar')
+        menuLogos.addEventListener('click',function(){
+            menuLogos.style.display='none';
+            menu.style.display='block'
+        });
+        cerrar.addEventListener('click',function(){
+            menuLogos.style.display='block';
+            menu.style.display='none'
+        })
+    </script>
+</body>
+</html>
