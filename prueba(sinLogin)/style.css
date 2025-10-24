@@ -452,12 +452,23 @@ body, html {
 #logoBotonLogin{
     display: none;
 }
-
+#logos{
+    margin-left: -13%;
+}
 
 /*iPad pro 1024px*/
 @media (max-width: 1024px){
     html{
         width: 100%;
+    }
+    #logos{
+        margin-right: -0%;
+        position: relative;
+        right: 9.5em;
+        left: 1%;
+    }
+    .botonLogin{
+        display: none;
     }
     #logoBotonLogin{
         display: block;
@@ -498,28 +509,40 @@ body, html {
         justify-content: center;
     }
     .cuadro .textoNiños{
-        margin: 0;
-        width: 70em;
-        font-size: 1.5em;
+        all: unset;
+        position: static;
+        width: 500em;
+        
     }
+
+
     .linkNiños{
+        all: initial;
+        /* position: relative;
+        right: 100px; */
+        /* transform:scaleX(100%); */
+        
+
         /* margin: 0;
         position: relative;
         right: 1em;
         width: 1000px; */
     }
+    .linkNiños button{
+        all: initial;
+    }
+    
 
 
 
 
 
     .imagenLogo{
-        /* width: 30%;
-        height: 12%;
+        width: 80%;
+        height: auto;
         position: relative;
-        z-index: 100;
-        left: 0;
-        top: 19px; */
+        top: 0.5em;
+        right: 1em;
     }
     button.restaurantAdso{
         width: 100%;
@@ -529,5 +552,34 @@ body, html {
         font-size: 2.2em;
         position: relative;
         top: 0.1em;
+    }
+    /* Reiniciar */
+    /* *{
+        all:unset;
+    } */
+
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        all: initial;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .siguenos{
+        position: relative;
+        bottom: 6em;
+        left: 9em;
+    }
+    .iconos{
+        position: relative;
+        top: 1em;
+        right: 3em;
+        /* display: none; */
+        width: 700px;
     }
 }

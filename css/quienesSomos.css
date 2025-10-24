@@ -46,7 +46,7 @@ body, html {
 }
 .imagenFundador{
     position: relative;
-    top: 6.6%;
+    top: 11%;
     left: 20px;
 }
 .textoFundador{
@@ -90,7 +90,7 @@ body, html {
 .imagenMision{
     height: 2%;
     position: relative;
-    top: 8.4%;
+    top: 11.5%;
 }
 
 .espacioVision{
@@ -127,7 +127,7 @@ body, html {
 }
 .imagenVision{
     position: relative;
-    top: 5.2%;
+    top: 8.8%;
 }
 
 
