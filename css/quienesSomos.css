@@ -13,11 +13,17 @@ body, html {
     display: flex;
 }
 .imagenIcono{
-    background-image: url("../img/QuienesSomos/boton.png");
+    /* background-image: url("../img/QuienesSomos/boton.png");
     background-repeat: no-repeat;
     width: 100%;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 25px; */
+}
+.botonRegresar{
+    margin-left: 1em;
+    position: relative;
+    top: 30%;
+    width: 80px;
 }
 .botonLogo{
     cursor: pointer;
@@ -30,6 +36,11 @@ body, html {
     right: 2px;
     
 }
+.tituloEncabezado{
+    position: relative;
+    left: 35%;
+}
+
 .titulo{
     color: rgba(176, 203, 223, 1);
     font-size: 50px;
