@@ -207,3 +207,115 @@ body, html {
     position: relative;
     bottom: 30px;
 }
+@media(max-width: 1024px){
+    h1.titulo{
+        position: relative;
+        right: 2em;
+    }
+    .fondoFundador,.mision,.vision{
+        height: min-content;
+    }
+    .imagenFundador img{
+        position: relative;
+        top: 0.25em;
+    }
+    .textoFundador p{
+        position: relative;
+        width:22em;
+        font-size: 1.5em;
+    }
+    .textoMision{
+        /* display: none; */
+        font-size: 1.3em;
+        width: 20em;
+    }
+    .imagenMision{
+        all: initial;
+        width: 30em;
+        position: relative;
+        left: 9em;
+        top: 0.266em;
+    }
+    .imagenVision{
+        width: 29em;
+        position: relative;
+        top: 0.25em;
+    }
+    .textoVision{
+        font-size: 1.3em;
+        width: 20em;
+        position: relative;
+        top: 2.2em;
+    }
+}
+@media (width: 430px){
+    .encabezado,.espacioMision,.espacioVision{
+        width: 100%;
+        height: 70px;
+    }
+    .botonRegresar{
+        right: 1em;
+    }
+    .botonLogo img{
+        width: 40px;
+        top: 0.06em;
+        opacity: 0.7;
+    }
+    .encabezado *{
+        font-size: 1.5em;
+    }
+    .titulo{
+        position: relative;
+        left: -6em;
+        top: -0.4em;
+    }
+    .tituloMision,.tituloVision{
+        font-size: 1.5em;
+        position: relative;
+        right: 0.9em;
+    }
+    /*Fundador*/
+    .fondoFundador{
+        height: min-content;
+    }
+    .imagenFundador{
+        width: 10em;
+    }
+    .textoFundador p{
+        font-size: 0.7em;
+        width: 20em;
+    }
+    .textoMision{
+        /* display: none; */
+        font-size: 0.85em;
+    }
+    .imagenMision{
+        width: 18em;
+        left: 1em;
+        top: 0.2706em;
+    }
+    .imagenVision{
+        width: 15em;
+    }
+    .textoVision{
+        font-size: 0.85em;
+        width: 19em;
+        top: 1.5em;
+    }
+
+    .pieDePaginaTamaño{
+        width: 100%;
+    }
+    
+    .serviciosPie{
+        margin: 0;
+        left: 0.8em;
+        font-size: 2.5em;
+    }
+
+
+
+    .prueba{
+        display: none;
+    }
+}
