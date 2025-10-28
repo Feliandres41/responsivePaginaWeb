@@ -1,3 +1,4 @@
+
 body, html {
   margin: 0;
   padding: 0;
@@ -188,7 +189,6 @@ body, html {
 }
 
 .pieContactos{
-    position: relative;
     bottom: 20px;
     position: relative;
     right: 100px;
@@ -207,6 +207,7 @@ body, html {
     position: relative;
     bottom: 30px;
 }
+/*iPad pro*/
 @media(max-width: 1024px){
     h1.titulo{
         position: relative;
@@ -247,8 +248,96 @@ body, html {
         position: relative;
         top: 2.2em;
     }
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        flex-direction: row;
+        gap: 8em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        height: 10px;
+        top: 1em;
+    }
+    .serviciosPie{
+        margin: 0;
+        font-size: 2.2em;
+        left: 0.8em;
+        top: 0.32em;
+        width: min-content;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0.5em;
+        width: 10em;
+        text-align: center;
+        font-size: 1.2em;
+        left: -0.3em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+    }
+
+
+    .contactosPie{
+        width: min-content;
+        height: min-content;
+        font-size: 2.2em;
+        left: 1em;
+    }
+    .siguenosPie{
+        font-size: 2.2em;
+        left: 1.5em;
+        top: 0.02em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 1.2em;
+        width: 9em;
+        position: relative;
+        bottom: 0.9em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.25em;
+    }
+     .iconos{
+        position: relative;
+        top: 1em;
+        left: 0.99em;
+        width:15em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+     }
+     .iconos img{
+        width: 3em;
+        height: auto;
+        margin: 0;
+     }
+     img.youtube{
+        width: 3em;
+        height: 3.8em;
+     }
 }
-@media (width: 430px){
+/*iPhone 14 pro max*/
+@media (max-width: 430px){
     .encabezado,.espacioMision,.espacioVision{
         width: 100%;
         height: 70px;
@@ -286,7 +375,6 @@ body, html {
         width: 20em;
     }
     .textoMision{
-        /* display: none; */
         font-size: 0.85em;
     }
     .imagenMision{
@@ -305,17 +393,86 @@ body, html {
 
     .pieDePaginaTamaño{
         width: 100%;
+        height: min-content;
     }
-    
+    .pieDePagina{
+        flex-direction: row;
+        gap: 0.5em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        top: 1.5em;
+        height: 10px;
+    }
     .serviciosPie{
         margin: 0;
+        font-size: 1.2em;
+        left: 0;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0em;
+        width: 10em;
+        text-align: center;
+        font-size: 0.8em;
+        left: -2.2em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+        left:2em;
+    }
+
+
+    .contactosPie{
+        font-size: 1.2em;
+    }
+    .siguenosPie{
+        font-size: 1.2em;
+        left: 0em;
+        top: 0.74em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 0.8em;
+        width: 9em;
+        position: relative;
+        bottom: 0.9em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
         left: 0.8em;
-        font-size: 2.5em;
     }
+     .iconos{
+        position: relative;
+        top: 1.99em;
+        width:8em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+        left: -0.8em;
+     }
+     .iconos img{
+        width: auto;
+        height: 1.3em;
+        margin: 0;
+     }
+     img.youtube{
+        width: 1.3em;
+        height: 1.6em;
+     }
 
-
-
-    .prueba{
-        display: none;
-    }
 }
