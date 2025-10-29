@@ -13,23 +13,18 @@
                 <button id="menuLogos"><img src="../img/index/logo.png" class="imagenLogo" height="120px"></button>
             </div>
             
-            <div id="logos">
+            <div id="logos" style="display: none;">
                 <button id="cerrar"><img src="../menuLogos/cerrar.png"></button>
-                <img src="../img/RECREACIONAL.png" height="200px" style="opacity: 70%;">
+                <img src="../img/RECREACIONAL.png" class="recreacional" height="200px" style="opacity: 70%;">
                 <form action="./gym.html">
                     <button id="gym"><img src="../menuLogos/gym.png" height="110px" style="position: relative; right: 5px;"></button>
                 </form>
-                <form action="./restaurante.html">
-                    <button id="gym"><img src="../menuLogos/restaurant.png" height="110px" style="position: relative; right: 5px;"></button>
-                </form>  
+                <form action="./restaurante.html" id="restauranteAdso">
+                    <button id="gym" class="restaurantAdso"><img src="../menuLogos/restaurant.png" height="110px" style="position: relative; right: 5px;"></button>
+                </form>
                 <!-- <button id="restaurante"><img src="../menuLogos/restaurant.png" height="130px" style="margin-top: 20px; width: 300px;"></button> -->
-                
+
             </div>
-            
-
-
-
-
 
             <div class="quienesSomos">
                 <form action="./quienesSomos.html">
@@ -44,14 +39,14 @@
                 <form action="login.html">
                     <button class="botonLogin"><img src="../img/index/logoLogin.png" height="120px"></button>
                 </form>
-            </div>
+            <img src="../img/iconos/usuario3.png" id="logoBotonLogin">
         </div>
     </div>
     <div class="espacioAcuatico">
         <div class="inicio">
             <img class="imagenInicial" src="../img/index/agua.png" width="100%" height="970">
         </div>
-        <div class="inicioMedio">
+        <div class="inicioMedio" id="cel">
             <div>
                 <img src="../img/index/perro.png" width="420px" class="perro">
             </div>
@@ -59,12 +54,12 @@
                 <p class="textoPiscina">Disfruta de nuestras 10 piscinas: 5 diseñadas para niños, 4 para adultos que buscan relajarse, y una olímpica ideal para entrenamientos y competencias. ¡Diversión, confort y profesionalismo en un solo lugar!</p>
             </div>
         </div>
-        <img src="../img/index/agua2.png" width="100%" height="">
-        <div class="botonTienda">
+        <img id="cel" src="../img/index/agua2.png" width="100%" height="">
+        <!-- <div class="botonTienda">
             <a href="./afiliacion.html">
                 <img src="../img/index/tienda.png" width="150px">
             </a>
-        </div>
+        </div> --><!--SOLO PARA AFILIADOS?-->
     </div>
     <div class="espacio"></div>
     <div class="restaurante">
@@ -83,9 +78,9 @@
         </div>
     </div>
     <div class="espacio"></div>
-<!--Servicios niños/adolecentes/adultos-->
+<!-- Servicios niños/adolecentes/adultos -->
     <div class="servicios">
-        <!--Servicios de niños-->
+        <!-- Servicios de niños -->
         <div class="niños">
             <div class="cabezeraNiños">
                 <div class="cuadrosNiños">
@@ -117,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <!--Servicios de adolecentes-->
+        <!-- Servicios de adolecentes -->
         <div class="espacio"></div>
 
         <div class="adolecentes">
@@ -205,7 +200,7 @@
                         <p class="pieContactos">Fonseca, La Guajira, 47001 Colombia</p>
                     </div>
                 </div>
-                <div>
+                <div class="siguenos">
                     <h2 class="siguenosPie">Siguenos</h2>
                     <div class="iconos">
                         <img src="../img/index/twitter.png" class="twitter" alt="twitter">

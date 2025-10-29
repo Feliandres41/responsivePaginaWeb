@@ -27,10 +27,10 @@ body, html {
     transition: background-color 0.3s ease;
 }
 .tituloCabezera{
-    position: absolute;
+    position: relative;
     font-size: 35px;
     left: 32%;
-    top: -3%;
+    top: -0.8em;
     color: rgba(32, 0, 255, 1);
 }
 
@@ -87,7 +87,7 @@ body, html {
 .niñaInicio{
     object-fit: cover;
     position: relative;
-    top: 3%;
+    top: 5em;
 }
 .inicioTexto p{
     font-size: 250%;
@@ -271,4 +271,366 @@ body, html {
     margin-left: 40px;
     position: relative;
     bottom: 30px;
+}
+@media (max-width: 1024px){
+    .cabezera{
+        transition: all 0.5s;
+    }
+    h1{
+        position: absolute;
+        left: -2.3em;
+        top: 0;
+        width: 9em;
+        right: 1.5em;
+    }
+    .inicioNiños{
+        height: 35em;
+    }
+    .inicioTexto{
+        font-size: 0.8em;
+        position: relative;
+        top: 1.9em;
+        right: 20em;
+        text-align: center;
+    }
+    .niñaInicio img{
+        position: relative;
+        top: 6em;
+    }
+    h2{
+        position: relative;
+        top: 0em;
+    }
+    .guarderia,.parqueInfantil,.paseosGuiados,.personalEncargado{
+        width: 100%;
+        height: 35em;
+    }
+    .guarderia p,.paseosGuiados p{
+        font-size: 1.3em;
+        width: 20em;
+        left: 1.2em;
+        top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .parqueInfantil p{
+        font-size: 1.3em;
+        width: 20em;
+        left: 1.2em;
+        top: 1.9em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .paseosGuiados p{
+        top: 1.5em;
+    }
+    .espacioTexto p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        top: 1em;
+    }
+
+    /*Pie de pagina*/
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        flex-direction: row;
+        gap: 8em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        height: 10px;
+        top: 1em;
+    }
+    .serviciosPie{
+        margin: 0;
+        font-size: 2.2em;
+        left: 0.8em;
+        top: 0.32em;
+        width: min-content;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0.5em;
+        width: 10em;
+        text-align: center;
+        font-size: 1.2em;
+        left: -0.3em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+    }
+    .contactosPie{
+        width: min-content;
+        height: min-content;
+        font-size: 2.2em;
+        left: 1em;
+    }
+    .siguenosPie{
+        font-size: 2.2em;
+        left: 1.5em;
+        top: 0.02em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 1.2em;
+        width: 9em;
+        position: relative;
+        bottom: 0.9em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.25em;
+    }
+    .iconos{
+        position: relative;
+        top: 1em;
+        left: 0.99em;
+        width:15em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+    }
+    .iconos img{
+        width: 3em;
+        height: auto;
+        margin: 0;
+    }
+    img.youtube{
+        width: 3em;
+        height: 3.8em;
+    }
+
+
+    /*Inicio de script*/
+    .menuNav#menus{
+        transition: all 0.5s;
+        position: absolute;
+        width: 20em;
+    }
+    .menuNav#menus div{
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: 300;
+    }
+    .linkServiciosParaNiños,.linkServiciosParaAdultos{
+        width: 18em;
+        text-align: center;
+    }
+    .x{
+        height: min-content;
+        border-radius: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+    /*Fin de script*/
+}
+@media (width: 430px){
+    .cabezera{
+        width: 100%;
+        height: min-content;
+    }
+    .cabezera img{
+        width: 2.5em;
+        position: relative;
+        top: -1.5em;
+    }
+    h1{
+        font-size: 0.9em;
+        top: 0.5em;
+        left: -3em;
+    }
+    .inicioNiños{
+        height: max-content;
+        left: 10em;
+    }
+    .inicioNiños *{
+        position: relative;
+        left: 0.1em;
+    }
+    .niñaInicio{
+        top: -4em;
+    }
+    .inicioTexto p{
+        font-size: 0.9em;
+        left: -6em;
+        top: -1.8em;
+    }
+    .espacio{
+        width: 100%;
+        height: 3em;
+        justify-content: center;
+    }
+    h2{
+        position: relative;
+        top: 0em;
+        margin: 0;
+    }
+    .espacio h2{
+        font-size: 1.5em;
+    }
+    .guarderia,.parqueInfantil,.paseosGuiados,.personalEncargado{
+        width: 100%;
+        height: 15em;
+    }
+    .guarderia p,.paseosGuiados p{
+        font-size: 0.6em;
+        width: 18em;
+        left: 1em;
+        top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .parqueInfantil p{
+        font-size: 0.6em;
+        width: 18em;
+        left: 1.2em;
+        top: -0.1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .paseosGuiados p{
+        top: 1.5em;
+    }
+    .espacioTexto p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.6em;
+        top: 1em;
+    }
+
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        flex-direction: row;
+        gap: 0.5em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        top: 1.5em;
+        height: 10px;
+    }
+    .serviciosPie{
+        margin: 0;
+        font-size: 1.2em;
+        left: 0;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0em;
+        width: 10em;
+        text-align: center;
+        font-size: 0.8em;
+        left: -2.2em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+        left:2em;
+    }
+
+
+    .contactosPie{
+        font-size: 1.2em;
+    }
+    .siguenosPie{
+        font-size: 1.2em;
+        left: 0em;
+        top: 0.74em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 0.8em;
+        width: 9em;
+        position: relative;
+        top: 0.5em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.8em;
+    }
+     .iconos{
+        position: relative;
+        top: 3em;
+        width:8em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+        left: -0.8em;
+     }
+     .iconos img{
+        width: auto;
+        height: 1.3em;
+        margin: 0;
+     }
+     img.youtube{
+        width: 1.3em;
+        height: 1.6em;
+     }
+     /*Inicio de script*/
+    .menuNav#menus{
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+    }
+    .menuNav#menus div{
+        font-size: 0.5em;
+        text-align: center;
+        font-weight: 300;
+    }
+    .linkServiciosParaNiños,.linkServiciosParaAdultos{
+        width: 225em;
+        text-align: center;
+    }
+    .x{
+        height: min-content;
+        border-radius: 100%;
+        margin: 0;
+        position: relative;
+        top: 2em;
+    }
+    .x img{
+        width: 1em;
+        position: relative;
+        right: 0.8em;
+    }
+    .x::after{
+        content: "Cerrar";
+        position: absolute;
+        bottom: 3.9em;
+        left: 0.5em;
+        font-size: 0.5em;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .regresarMenu{
+        z-index: 100;
+    }
+    /*Fin de script*/
 }

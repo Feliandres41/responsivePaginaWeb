@@ -467,15 +467,19 @@ body, html {
         right: 9.5em;
         left: 1%;
     }
+    .cabezera{
+        gap: 8.39em;
+    }
     .botonLogin{
         display: none;
     }
     #logoBotonLogin{
         display: block;
-        position: absolute;
-        width: 6em;
+        position: relative;
+        width: 5em;
+        height: 5em;
         right: 0.6em;
-        top: 0.8em;
+        top: 1.25em;
         /* position: absolute;
         top: 0; */
         /* height: 7em;
