@@ -217,35 +217,41 @@ body, html {
     align-items: flex-start;
     width: 100%;
 }
+.niña{
+    position: relative;
+    left: 4em;
+}
 .cuadro .textoNiños{
     height: 500px;
-    width: 100%;
+    width: 70%;
     margin-top: 40px;
     font-size: 30px;
     margin-right: 200px;
     margin-left: 100px;
     position: relative;
     left: 80px;
+    color: white;
 }
 .cuadro .linkNiños{
     background-color: rgba(15, 0, 119, 1);
     height: 100px;
-    width: 900px;
-    margin-top: 700px;
+    width: 22%;
+    margin-top: 11.1%;
     border-top-left-radius: 30px;
+    position: relative;
+    left: 78%;
 }
-.cuadro .linkNiños .botonNiños{
+.organizacion .linkNiños .botonNiños{
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 37px;
     color: white;
     background-color: rgba(15, 0, 119, 0);
     border: none;
-    margin-top: 40px;
-    margin-right: 25px;
     position: relative;
-    left: 20px;
-    top: -10px;
+    top: 0.1em;
+
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -283,7 +289,7 @@ body, html {
 .cuadro .textoAdolecentes{
     color: white;
     height: 500px;
-    width: 1905px;
+    width: 70%;
     margin-top: 40px;
     font-size: 30px;
     margin-right: 200px;
@@ -294,9 +300,11 @@ body, html {
 .cuadro .linkAdolecentes{
     background-color: rgba(255, 0, 98, 1);
     height: 100px;
-    width: 900px;
-    margin-top: 700px;
+    width: 23%;
     border-top-left-radius: 30px;
+    position: relative;
+    top: 10em;
+    left:65em;
 }
 .cuadro .linkAdolecentes .botonAdolecentes{
     cursor: pointer;
@@ -343,7 +351,7 @@ body, html {
 .cuadro .textoAdultos{
     color: white;
     height: 500px;
-    width: 1905px;
+    width: 70%;
     margin-top: 70px;
     font-size: 30px;
     margin-right: 200px;
@@ -354,12 +362,12 @@ body, html {
 .cuadro .linkAdultos{
     background-color: rgba(255, 153, 0, 1);
     height: 100px;
-    width: 900px;
-    margin-top: 700px;
+    width: 19.2em;
     border-top-left-radius: 30px;
     position: relative;
-    top: 140px;
+    top: 16.8em;
     right: 1%;
+    left: 66em;
 }
 .cuadro .linkAdultos .botonAdultos{
     cursor: pointer;
@@ -512,29 +520,53 @@ body, html {
         display: flex;
         justify-content: center;
     }
-    .cuadro .textoNiños{
-        all: unset;
-        position: static;
-        width: 500em;
-        
+    .inicioCuadroAdolecentes{
+        width: 100%;
+        display: flex;
     }
-
-
-    .linkNiños{
-        all: initial;
-        /* position: relative;
-        right: 100px; */
-        /* transform:scaleX(100%); */
-        
-
-        /* margin: 0;
+    .textoInicioAdolecentes{
+        margin: 0;
         position: relative;
-        right: 1em;
-        width: 1000px; */
+        left: 2em;
     }
-    .linkNiños button{
-        all: initial;
+    .cuadrosAdolecentes *{
+        display: flex;
+        position: relative;
+        justify-content: start;
     }
+    .segundoCuadradoAdolecentes{
+        position: relative;
+        right: 15em;
+    }
+    .organizacion .textoNiños{
+        font-size: 1.5em;
+        position: relative;
+        left: -1em;
+        width: 20em;
+    }
+    .organizacion .linkNiños{
+        left: 23em;
+        width: 16em;
+    }
+    .botonNiños{
+        all: ini;
+        text-align: center;
+        font-size: 50000%;
+    }
+    .niños .cuadro,.adolecentes .cuadro{
+        height: max-content;
+    }
+    .niña img,.adolecentes img,.adultos img{
+        width: 25em;
+        margin: 0;
+        position: relative;
+        right: 3em;
+    }
+    .adolecentes img{
+        right: 3em;
+    }
+
+    
     
 
 
@@ -562,28 +594,128 @@ body, html {
         all:unset;
     } */
 
+    
+    .organizacion .textoAdolecentes{
+        font-size: 1.5em;
+        position: relative;
+        left: -30em;
+        width: 20em;
+        bottom: 1.8em;
+    }
+    .organizacion .linkAdolecentes{
+        position: relative;
+        left: -22em;
+        width: 16em;
+        top: 0;
+    }
+    .botonAdolecentes{
+        position: relative;
+        left: 0.5em;
+    }
+    .adultos img{
+        left: 0.5em;
+    }
+    .adultos .cuadro{
+        height: max-content;
+    }
+    .textoAdultos{
+        bottom: 2.5em;
+    }
+    .organizacion .linkAdultos{
+        font-size: 1.5em;
+        position: relative;
+        left: 14.7em;
+        width: 11.5em;
+        top: 0em;
+    }
+    /*Pie de pagina*/
     .pieDePaginaTamaño{
         width: 100%;
         height: min-content;
     }
     .pieDePagina{
-        all: initial;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        gap: 8em;
+        left: 0.8em;
+        margin: 0;
     }
-    .siguenos{
+    .serviciosPieDePagina{
         position: relative;
-        bottom: 6em;
-        left: 9em;
+        height: 10px;
+        top: 1em;
     }
-    .iconos{
+    .serviciosPie{
+        margin: 0;
+        font-size: 2.2em;
+        left: 0.8em;
+        top: 0.32em;
+        width: min-content;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0.5em;
+        width: 10em;
+        text-align: center;
+        font-size: 1.2em;
+        left: -0.3em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+    }
+
+
+    .contactosPie{
+        width: min-content;
+        height: min-content;
+        font-size: 2.2em;
+        left: 1em;
+    }
+    .siguenosPie{
+        font-size: 2.2em;
+        left: 1.5em;
+        top: 0.02em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 1.2em;
+        width: 9em;
+        position: relative;
+        bottom: 0.9em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.25em;
+    }
+     .iconos{
         position: relative;
         top: 1em;
-        right: 3em;
-        /* display: none; */
-        width: 700px;
-    }
+        left: 0.99em;
+        width:15em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+     }
+     .iconos img{
+        width: 3em;
+        height: auto;
+        margin: 0;
+     }
+     img.youtube{
+        width: 3em;
+        height: 3.8em;
+     }
 }
+/*iPhone 14 pro max*/
+@media ()
