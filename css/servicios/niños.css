@@ -272,6 +272,9 @@ body, html {
     position: relative;
     bottom: 30px;
 }
+.celMostrar{
+    display: none;
+}
 @media (max-width: 1024px){
     .cabezera{
         transition: all 0.5s;
@@ -483,7 +486,10 @@ body, html {
     .espacio h2{
         font-size: 1.5em;
     }
-    .guarderia,.parqueInfantil,.paseosGuiados,.personalEncargado{
+    .celOcultar{
+        display: none;
+    }
+    /* .guarderia,.parqueInfantil,.paseosGuiados{
         width: 100%;
         height: 15em;
     }
@@ -503,11 +509,22 @@ body, html {
     }
     .paseosGuiados p{
         top: 1.5em;
+    } */
+
+    .personalEncargado{
+        width: 100%;
+        height: 15em;
+    }
+    .espacioTexto{
+        background-color: rgba(255, 153, 0, 0);
     }
     .espacioTexto p{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.6em;
-        top: 1em;
+        font-size: 0.5em;
+        top: 12.9em;
+        left: 0.8em;
+        margin: 0;
+        width: 95%;
     }
 
     .pieDePaginaTamaño{
@@ -633,4 +650,38 @@ body, html {
         z-index: 100;
     }
     /*Fin de script*/
+    .celMostrar{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #005469af;
+        color: white;
+    }
+    .informacionServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoServicios{
+        display: flex;
+        flex-direction: row;
+    }
+    .infoServicios img{
+        width: 7em;
+    }
+    .infoServicios p{
+        font-size: 0.7em;
+        width: 25em;
+        text-align: center;
+        font-weight: 400;
+        color: rgb(70, 42, 0);
+    }
+    #guarderiaMostrar::after{
+        content: "ansao";
+        font-size: 2em;
+        color: red;
+    }
+
 }

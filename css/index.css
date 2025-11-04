@@ -589,10 +589,6 @@ body, html {
         position: relative;
         top: 0.1em;
     }
-    /* Reiniciar */
-    /* *{
-        all:unset;
-    } */
 
     
     .organizacion .textoAdolecentes{
@@ -618,15 +614,20 @@ body, html {
     .adultos .cuadro{
         height: max-content;
     }
-    .textoAdultos{
-        bottom: 2.5em;
+    #textoAdultos{
+        font-size: 1.5em;
+        bottom: 2.9em;
+        width: 20em;
+        position: relative;
+        left: -32em;
     }
     .organizacion .linkAdultos{
         font-size: 1.5em;
         position: relative;
-        left: 14.7em;
+        left: -14.7em;
         width: 11.5em;
         top: 0em;
+        margin-top: 1em;
     }
     /*Pie de pagina*/
     .pieDePaginaTamaño{
@@ -718,4 +719,8 @@ body, html {
      }
 }
 /*iPhone 14 pro max*/
-@media ()
+@media (width: 430px){
+    .cabezera{
+        width: 100%;
+    }
+}
