@@ -269,3 +269,470 @@ body, html {
     position: relative;
     bottom: 30px;
 }
+.celMostrar{
+    display: none;
+}
+
+/* Media query para tablets */
+@media (max-width: 1024px){
+    .cabezera{
+        transition: all 0.5s;
+    }
+    h1{
+        position: absolute;
+        left: -2.3em;
+        top: 0;
+        width: 9em;
+        right: 1.5em;
+    }
+    .inicioNiños{
+        height: 35em;
+    }
+    .inicioTexto{
+        font-size: 0.8em;
+        position: relative;
+        top: 1.9em;
+        right: 20em;
+        text-align: center;
+    }
+    .niñaInicio img{
+        position: relative;
+        top: 6em;
+    }
+    h2{
+        position: relative;
+        top: 0em;
+    }
+    .guarderia,.parqueInfantil,.paseosGuiados,.personalEncargado{
+        width: 100%;
+        height: 35em;
+    }
+    .guarderia p,.paseosGuiados p{
+        font-size: 1.3em;
+        width: 20em;
+        left: 1.2em;
+        top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .parqueInfantil p{
+        font-size: 1.3em;
+        width: 20em;
+        left: 1.2em;
+        top: 1.9em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .paseosGuiados p{
+        top: 1.5em;
+    }
+    .espacioTexto p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        top: 1em;
+    }
+
+    /*Pie de pagina*/
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        flex-direction: row;
+        gap: 8em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        height: 10px;
+        top: 1em;
+    }
+    .serviciosPie{
+        margin: 0;
+        font-size: 2.2em;
+        left: 0.8em;
+        top: 0.32em;
+        width: min-content;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0.5em;
+        width: 10em;
+        text-align: center;
+        font-size: 1.2em;
+        left: -0.3em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+    }
+    .contactosPie{
+        width: min-content;
+        height: min-content;
+        font-size: 2.2em;
+        left: 1em;
+    }
+    .siguenosPie{
+        font-size: 2.2em;
+        left: 1.5em;
+        top: 0.02em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 1.2em;
+        width: 9em;
+        position: relative;
+        bottom: 0.9em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.25em;
+    }
+    .iconos{
+        position: relative;
+        top: 1em;
+        left: 0.99em;
+        width:15em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+    }
+    .iconos img{
+        width: 3em;
+        height: auto;
+        margin: 0;
+    }
+    img.youtube{
+        width: 3em;
+        height: 3.8em;
+    }
+
+    /*Inicio de script - Menú de navegación*/
+    .menuNav#menus{
+        transition: all 0.5s;
+        position: absolute;
+        width: 20em;
+    }
+    .menuNav#menus div{
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: 300;
+    }
+    .x{
+        height: min-content;
+        border-radius: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+    /*Fin de script*/
+}
+
+/* Media query para móviles - 430px */
+@media (width: 430px){
+    body, html {
+        overflow-x: hidden; /* Prevenir scroll horizontal */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Cabecera */
+    .cabezera{
+        width: 100%;
+        height: 4em;
+        padding: 0.5em 0;
+    }
+    .cabezera img{
+        width: 2.5em;
+        position: relative;
+        top: -0.5em;
+    }
+    h1{
+        font-size: 1em;
+        top: 0.2em;
+        left: -2.5em;
+        text-align: center;
+        width: 15em;
+    }
+    
+    /* Sección Inicio */
+    .inicioNiños{
+        height: 20em;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+    }
+    .niñaInicio{
+        top: 0;
+        text-align: center;
+    }
+    .niñaInicio img{
+        width: 60%;
+        max-width: 15em;
+    }
+    .inicioTexto{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .inicioTexto p{
+        font-size: 0.85em;
+        left: 0 !important;
+        top: 0;
+        margin: 0.3em 0 !important;
+        margin-left: 0 !important;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    /* Espacios y títulos */
+    .espacio{
+        width: 100%;
+        height: 3.5em;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .espacio h2{
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0.5em 0;
+    }
+    
+    /* Ocultar versión desktop */
+    .celOcultar{
+        display: none;
+    }
+
+    /* Sección móvil - Estilo adolescentes */
+    .celMostrar{
+        display: block;
+        background: linear-gradient(180deg, rgba(190, 75, 101, 0.85) 0%, rgba(146, 23, 40, 0.9) 100%);
+        color: white;
+        padding: 2em 0;
+    }
+    
+    .info{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .info h3{
+        font-size: 1.8em;
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .informacionServicios{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 0 1em;
+    }
+    
+    .infoServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 15px;
+        padding: 1.5em;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        gap: 1em;
+    }
+    
+    .infoServicios img{
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .infoServicios p{
+        font-size: 0.75em;
+        width: 100%;
+        max-width: 24em;
+        text-align: center;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.95);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Personal Encargado / Campeonato deportivo */
+    .personalEncargado{
+        width: 100%;
+        height: 18em;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .imagenEncargados{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .espacioTexto{
+        background-color: rgba(146, 23, 40, 0.75);
+        height: auto;
+        padding: 1em;
+    }
+    
+    .espacioTexto p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.65em;
+        line-height: 1.5;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Pie de página */
+    .pieDePaginaTamaño{
+        width: 100%;
+        height: min-content;
+    }
+    .pieDePagina{
+        flex-direction: row;
+        gap: 0.5em;
+        left: 0.8em;
+        margin: 0;
+    }
+    .serviciosPieDePagina{
+        position: relative;
+        top: 1.5em;
+        height: 10px;
+    }
+    .serviciosPie{
+        margin: 0;
+        font-size: 1.2em;
+        left: 0;
+        height: min-content;
+    }
+    div p.pieServicios{
+        top: 0em;
+        width: 10em;
+        text-align: center;
+        font-size: 0.8em;
+        left: -2.2em;
+        height: min-content;
+    }
+    .pieServicios,.siguenosPieDePagina{
+        height: min-content;
+        position: relative;
+        left:2em;
+    }
+
+
+    .contactosPie{
+        font-size: 1.2em;
+    }
+    .siguenosPie{
+        font-size: 1.2em;
+        left: 0em;
+        top: 0.74em;
+    }
+    .textoContacto *{
+        margin: 0;
+    }
+    .textoContacto{
+        text-align: center;
+        font-size: 0.8em;
+        width: 9em;
+        position: relative;
+        top: 0.5em;
+    }
+    .pieContactos{
+        all: unset;
+        color: white;
+        left: -10em;
+        margin: 0;
+        gap: 0;
+    }
+    h2.contactosPie{
+        top: 0em;
+        left: 0.8em;
+    }
+     .iconos{
+        position: relative;
+        top: 3em;
+        width:8em;
+        height: min-content;
+        gap: 0;
+        bottom: 0em;
+        left: -0.8em;
+     }
+     .iconos img{
+        width: auto;
+        height: 1.3em;
+        margin: 0;
+     }
+     img.youtube{
+        width: 1.3em;
+        height: 1.6em;
+     }
+
+    /* Menú de navegación */
+    .menuNav#menus{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+    }
+    
+    .menuNav#menus div{
+        font-size: 0.6em;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .menuNav#menus a{
+        font-size: 500%;
+    }
+    
+    .menuNav#menus p{
+        font-size: 500%;
+    }
+    
+    .x{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em auto;
+        cursor: pointer;
+        height: min-content;
+        border-radius: 100%;
+        width: fit-content;
+        padding: 0.2em 0.5em;
+    }
+    .tituloCabezera{
+        margin: 0;
+        width: 2em;
+    }
+    h1{
+        width: 12em;
+        left: -2.2em;
+        top: 1.1em;
+        font-size: 0.8em;
+    }
+}
