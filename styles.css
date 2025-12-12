@@ -1,0 +1,398 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logoIndex{
+            position: relative;
+            width: 100px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            background: #fff;
+        }
+
+        /* Navegación */
+        .navegacion-principal {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        .logotipo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-enlaces {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .menu-enlaces a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+
+        .menu-enlaces a:hover {
+            color: #1a1a1a;
+        }
+
+        /* Sección Hero */
+        .seccion-hero {
+            height: 100vh;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-top: 0;
+        }
+
+        .seccion-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><path d="M0 0 L100 100 M100 0 L0 100" stroke="rgba(255,255,255,0.03)" stroke-width="2"/></svg>');
+            opacity: 0.5;
+        }
+
+        .contenido-hero {
+            /* position: relative; */
+            /* z-index: 1;
+            width: 100%; */
+        }
+        .contenido-hero img{
+            width: 100%;
+        }
+
+        .seccion-hero h1 {
+            font-size: 72px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            animation: animacion-entrada-arriba 1s ease;
+        }
+
+        .seccion-hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: animacion-entrada-arriba 1s ease 0.2s backwards;
+        }
+
+        .boton-llamado-accion {
+            padding: 18px 50px;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: animacion-entrada-arriba 1s ease 0.4s backwards;
+        }
+
+        .boton-llamado-accion:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Sección Gimnasio */
+        .seccion-gimnasio {
+            min-height: 100vh;
+            background: #1a1a1a;
+            color: white;
+            padding: 120px 50px;
+            position: relative;
+        }
+
+        .titulo-seccion {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .subtitulo-seccion {
+            font-size: 20px;
+            opacity: 0.7;
+            margin-bottom: 80px;
+            max-width: 600px;
+        }
+
+        .cuadricula-gimnasio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .tarjeta-gimnasio {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 60px 40px;
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .tarjeta-gimnasio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(240, 147, 251, 0.3);
+        }
+
+        .tarjeta-gimnasio h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .tarjeta-gimnasio p {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .caracteristicas-gimnasio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .caracteristica {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: background 0.3s;
+            display: flex;
+            justify-content: center;
+        }
+
+        .caracteristica:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .icono-caracteristica {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .caracteristica h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .caracteristica p {
+            font-size: 14px;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+
+        /* Sección Restaurante */
+        .seccion-restaurante {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 120px 50px;
+            color: #1a1a1a;
+        }
+
+        .contenedor-restaurante {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .cuadricula-restaurante {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .texto-restaurante h2 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+        }
+
+        .texto-restaurante p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .imagen-restaurante {
+            background: rgba(255,255,255,0.3);
+            height: 460px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            backdrop-filter: blur(10px);
+        }
+
+        .elementos-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .tarjeta-menu {
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .tarjeta-menu:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.7);
+        }
+
+        .tarjeta-menu h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .tarjeta-menu p {
+            font-size: 15px;
+            opacity: 0.7;
+            line-height: 1.6;
+        }
+
+        /* Sección Servicios */
+        .seccion-servicios {
+            padding: 120px 50px;
+            background: white;
+        }
+
+        .cuadricula-servicios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .tarjeta-servicio {
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #f8f9fa;
+        }
+
+        .tarjeta-servicio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .icono-servicio {
+            font-size: 60px;
+            margin-bottom: 25px;
+        }
+
+        .tarjeta-servicio h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .tarjeta-servicio p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Sección Piscina */
+        .seccion-piscina {
+            min-height: 80vh;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 120px 50px;
+            color: white;
+        }
+
+        
+
+        @keyframes animacion-entrada-arriba {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .seccion-hero h1 {
+                font-size: 42px;
+            }
+            
+            .titulo-seccion {
+                font-size: 36px;
+            }
+            
+            .cuadricula-restaurante {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .cuadricula-servicios {
+                grid-template-columns: 1fr;
+            }
+            
+            .navegacion-principal {
+                padding: 15px 20px;
+            }
+            
+            .menu-enlaces {
+                gap: 20px;
+                font-size: 14px;
+            }
+        }
+.piscina1{
+    width: 80%;
+}
+.cabezeraGym{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.imgRes{
+    width: 100%;
+    border-radius: 15px;
+}
