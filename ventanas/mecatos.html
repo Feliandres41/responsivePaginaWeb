@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecatos ADSO - Tu Tienda de Confianza</title>
+    <link rel="stylesheet" href="../css/mecatos.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <div class="logo">
+                <a href="./index.html"><div id="inicio"></div></a>
+                <div class="logo-texto">
+                    <h1>Mecatos ADSO</h1>
+                </div>
+            </div>
+
+            <div class="barra-busqueda">
+                <input type="text" class="campo-busqueda" placeholder="Buscar productos..." id="campo-busqueda">
+                <button class="boton-buscar">🔍</button>
+            </div>
+
+            <div class="acciones-cabecera" id="login">
+                <a href="./login.html"><button class="boton-icono" id="login">👤</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner-principal">
+        <h2>¡Bienvenidos a Mecatos Express! 🎉</h2>
+        <p>Las mejores bebidas, mecatos y helados del barrio</p>
+        <button class="boton-banner">Ver Ofertas del Día</button>
+    </section>
+
+    <!-- Categorías -->
+    <section class="seccion-categorias">
+        <h2 class="titulo-seccion">Nuestras Categorías</h2>
+        <div class="contenedor-categorias">
+            <!-- <div class="tarjeta-categoria activa" data-categoria="todos">
+                <span class="icono-categoria">🛍️</span>
+                <div class="nombre-categoria">Todos</div>
+                <div class="cantidad-productos">45 productos</div>
+            </div>busqueda -->
+            <div class="tarjeta-categoria" data-categoria="bebidas">
+                <span class="icono-categoria">🥤</span>
+                <div class="nombre-categoria">Bebidas</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="helados">
+                <span class="icono-categoria">🍦</span>
+                <div class="nombre-categoria">Helados</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="mecatos">
+                <span class="icono-categoria">🍿</span>
+                <div class="nombre-categoria">Mecatos</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="alcohol">
+                <span class="icono-categoria">🍺</span>
+                <div class="nombre-categoria">Bebidas Alcohólicas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviso Responsable -->
+    <div class="aviso-responsable">
+        ⚠️ El consumo de bebidas alcohólicas es solo para mayores de 18 años. ¡Bebe con responsabilidad!
+    </div>
+
+    <!-- Productos -->
+    <section class="seccion-productos">
+        <h2 class="titulo-seccion">Productos Destacados</h2>
+        <div class="contenedor-productos">
+            <!-- BEBIDAS -->
+            <div class="tarjeta-producto" data-categoria="bebidas">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-oferta">-20%</span>
+                    <img src="../img/tiendaMecatos/coca.png" style="width: 22vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Gaseosa Cola 2L</h3>
+                    <p class="descripcion-producto">Refresco de cola familiar</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Coca-Cola</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">
+                        $6.400 <span class="precio-anterior">$8.000</span>
+                    </div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="bebidas">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaMecatos/del-valle-fresh-citrus.webp" style="width: 22vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Jugo de Naranja 1L</h3>
+                    <p class="descripcion-producto">100% natural sin azúcar</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Natura</span>
+                        <span class="estrellas">⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$8.500</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="bebidas">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaMecatos/agua.png" style="width: 18vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Agua Mineral 600ml</h3>
+                    <p class="descripcion-producto">Con gas, sabor limón</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Crystal</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$2.500</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <!-- HELADOS -->
+            <div class="tarjeta-producto" data-categoria="helados">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-oferta">-15%</span>
+                    <img src="../img/tiendaMecatos/helado.png" style="width: 22vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Helado de Vainilla 1L</h3>
+                    <p class="descripcion-producto">Cremoso y delicioso</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Popsy</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">
+                        $12.750 <span class="precio-anterior">$15.000</span>
+                    </div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="helados">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaMecatos/helados.png" style="width: 29vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Paletas de Frutas x6</h3>
+                    <p class="descripcion-producto">Sabores variados</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Bon Ice</span>
+                        <span class="estrellas">⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$9.500</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="helados">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaMecatos/chocolate.png" style="width: 22vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Helado de Chocolate</h3>
+                    <p class="descripcion-producto">Con chips de chocolate</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Mimos</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$13.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <!-- MECATOS -->
+            <div class="tarjeta-producto" data-categoria="mecatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-oferta">2x1</span>
+                    <img src="../img/tiendaMecatos/Margarita-pollo-Photoroom.png" style="width: 22vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Papas Fritas 150g</h3>
+                    <p class="descripcion-producto">Sabor natural con sal</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Margarita</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$5.200</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="mecatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ff9ff3 0%, #feca57 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaMecatos/jet.png" style="width: 32vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Chocolatina Jet</h3>
+                    <p class="descripcion-producto">Chocolate con maní</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Jet</span>
+                        <span class="estrellas">⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$3.500</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="mecatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #55efc4 0%, #00b894 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaMecatos/galleta.png" style="width: 32vh;">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Galletas Festival x6</h3>
+                    <p class="descripcion-producto">Surtidas de sabores</p>
+                    <div class="detalles-producto">
+                        <span class="marca-producto">Festival</span>
+                        <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$4.800</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito 🛒</button>
+                </div>
+            </div>
+
+            <!-- <div class="tarjeta-producto" data-categoria="mecatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fab1a0 0%, #ff -->
+        </div>
+    </section>
+    <footer class="pie-pagina" id="contacto">
+        <div class="contenedor-pie">
+            <div class="seccion-pie">
+                <h3>Sobre Nosotros</h3>
+                <p>Tienda ADSO es tu tienda deportiva de confianza. Ofrecemos productos de alta calidad para todos los deportistas.</p>
+                <div class="redes-sociales">
+                    <div class="icono-red-social"><img src="../img/index/twitter.png" id="iconos" style="width: 5vh;"></div>
+                    <div class="icono-red-social"><img src="../img/index/facebook.png" id="iconos" style="width: 5vh;"></div>
+                    <div class="icono-red-social"><img src="../img/index/instagram.png" id="iconos" style="width: 5vh;"></div>
+                    <div class="icono-red-social"><img src="../img/index/youtube.png" id="iconos" class="youtube" style="width: 5vh;"></div>
+                </div>
+            </div>
+            <div class="seccion-pie">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contactos</a>
+            </div>
+            <div class="seccion-pie">
+                <h3>Contacto</h3>
+                <a>Calle 13 # 3 – 13 Barrio El 12.</p>
+                <a>Fonseca, La Guajira, 47001 Colombia</p>
+                <a href="mailto:Recreacion@adso.com">Recreacion@adso.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -5,7 +5,27 @@
         }
         .logoIndex{
             position: relative;
-            width: 100px;
+            right: 1.3vh;
+            height: 80px;
+            top: 0;
+        }
+        h4{
+            position: absolute;
+            left: 23vh;
+        }
+        #uno{
+            position: relative;
+            bottom: 1vh;
+        }
+        #dos{
+            position: relative;
+            bottom: 2vh;
+        }
+        #tres{
+            height: 100px;
+            position: relative;
+            left: 3vh;
+            bottom: 1vh;
         }
 
         body {

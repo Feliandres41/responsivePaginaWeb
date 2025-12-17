@@ -8,7 +8,16 @@
 </head>
 <body>
     <nav class="navegacion-principal">
-        <div class="logotipo"><img src="./img/index/logo.png" class="logoIndex"><h4>CENTRO RECREACIONAL ADSO</h4></div>
+        <div class="logotipo">
+            <!-- <img src="./img/index/logo.png" class="logoIndex"> -->
+
+            <div class="logoIndex" id="logoIndex">
+                <img src="./img/index/logo.png" id="uno">
+                <a href="./ventanas/restaurante.html"><img src="./restaurant.png" id="dos"></a>
+                <a href="./ventanas/tienda.html"><img src="./img/tiendas.png" id="tres"></a>
+            </div>
+            
+            <h4>CENTRO RECREACIONAL ADSO</h4></div>
         <ul class="menu-enlaces">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#gimnasio">Gimnasio</a></li>
@@ -28,9 +37,6 @@
         </div>
     </section> -->
         <div class="contenido-hero">
-            <!-- <h1>Bienestar Completo</h1>
-            <p>Tu centro recreacional de élite. Fitness, gastronomía y entretenimiento en un solo lugar.</p>
-            <button class="boton-llamado-accion">Reserva tu visita</button> -->
             <img src="./img/index/agua.png">
         </div>
     <section class="seccion-piscina" id="piscina">
@@ -38,21 +44,12 @@
         <p class="subtitulo-seccion">Relájate en nuestras piscinas diseñadas para todas las edades</p>
         <div class="caracteristicas-gimnasio">
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div>
-                <h4>Piscina Olímpica</h4>
-                <p>25 metros de largo, ideal para entrenamiento y natación profesional</p> -->
                 <img src="./tres-nadadores-varones-corriendo-uno-contra-el-otro.jpg" class="piscina1">
             </div>
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div>
-                <h4>Área Infantil</h4>
-                <p>Espacio seguro y divertido para los más pequeños con juegos acuáticos</p> -->
                 <img src="./nino-divirtiendose-con-flotador-en-la-piscina.jpg" class="piscina1">
             </div>
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div>
-                <h4>Jacuzzi & Spa</h4>
-                <p>Zona de relajación con hidromasaje y temperatura controlada</p> -->
                 <img src="./mujer-joven-relajante-en-un-jacuzzi.jpg" class="piscina1">
             </div>
         </div>
@@ -81,22 +78,18 @@
 
         <div class="caracteristicas-gimnasio">
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div> -->
                 <h4>Equipamiento Premium</h4>
                 <p>Máquinas de última tecnología y pesas de calidad profesional</p>
             </div>
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div> -->
                 <h4>Horario Extendido</h4>
                 <p>Abierto desde las 5:00 AM hasta las 11:00 PM todos los días</p>
             </div>
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div> -->
                 <h4>Entrenadores Expertos</h4>
                 <p>Staff certificado con años de experiencia en fitness</p>
             </div>
             <div class="caracteristica">
-                <!-- <div class="icono-caracteristica"></div> -->
                 <h4>Nutrición Deportiva</h4>
                 <p>Asesoría nutricional incluida en tu membresía</p>
             </div>
@@ -163,6 +156,40 @@
         </div>
     </section>
 
-    
+    <script>
+        /*<div class="logoIndex">
+                <img src="./img/index/logo.png" id="uno">
+                <img src="./restaurant.png" id="dos">
+                <img src="./img/tienda.png" id="tres">
+            </div>*/
+
+    let logos = [
+    document.getElementById('uno'),
+    document.getElementById('dos'),
+    document.getElementById('tres')
+    ];
+
+    let index = 0;
+    let tiempo = 3000; // 2 segundos
+
+    function mostrarLogo(i) {
+    logos.forEach(logo => logo.style.display = 'none');
+    logos[i].style.display = 'block';
+    }
+
+    mostrarLogo(index);
+
+    setInterval(() => {
+    index = (index + 1) % logos.length;
+    mostrarLogo(index);
+    }, tiempo);
+
+
+
+
+    </script>
+
+
+
 </body>
 </html>

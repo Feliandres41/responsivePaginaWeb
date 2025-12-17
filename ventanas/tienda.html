@@ -3,69 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda ADSO</title>
-    <link rel="stylesheet" href="../css/tienda.css">
+    <title>Tienda ADSO - Tienda Deportiva</title>
+    <link rel="stylesheet" href="../css/tiendaDeportiva.css">
 </head>
 <body>
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <div class="logo">
+                <a href="./index.html"><div class="logo-icono"></div></a>
+                <div class="logo-texto">
+                    <h1>Tienda ADSO</h1>
+                    <p>Tu tienda deportiva de confianza</p>
+                </div>
+            </div>
 
-    <header>
-        <h1>Tienda ADSO</h1>
+            <nav>
+                <ul class="menu-navegacion">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <!-- <li><a href="#ofertas">Ofertas</a></li> -->
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="acciones-cabecera">
+                <form action="./login.html">
+                    <button class="boton-icono" id="boton-usuario">👤 Iniciar Sesion</button>
+                </form>
+                <!-- <button class="boton-icono contador-carrito" id="boton-carrito">
+                    🛒
+                    <span class="numero-items" id="numero-carrito">0</span>
+                </button> -->
+            </div>
+        </div>
     </header>
 
-    <main class="store-container">
+    <section class="banner-principal" id="inicio">
+        <h2>¡Alcanza tu Máximo Potencial!</h2>
+        <p>Encuentra el equipo deportivo perfecto para ti</p>
+        <a href="#productos"><button class="boton-principal">Explorar Productos</button></a>
+    </section>
 
-        <section id="tienda-deportiva-hombre">
-            <h2>Ropa deportiva ♂️</h2>
-            <div class="category-showcase">
-                <div class="main-model">
-                    <img src="../img/tiendaDeportiva/modeloHombreDeportivo.png" alt="Modelo Ropa Deportiva Hombre">
+    <section class="seccion-categorias">
+        <h2 class="titulo-seccion">Nuestras Categorías</h2>
+        <div class="contenedor-categorias">
+            <div class="tarjeta-categoria" data-categoria="pantalones">
+                <div class="icono-categoria">👖</div>
+                <div class="nombre-categoria">Pantalones</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="sueteres">
+                <div class="icono-categoria">🧥</div>
+                <div class="nombre-categoria">Suéteres</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="zapatos">
+                <div class="icono-categoria">👟</div>
+                <div class="nombre-categoria">Zapatos</div>
+            </div>
+            <div class="tarjeta-categoria" data-categoria="utiles">
+                <div class="icono-categoria">⚽</div>
+                <div class="nombre-categoria">Útiles Deportivos</div>
+            </div>
+            <div class="tarjeta-categoria" id="gymCategoria" data-categoria="gym">
+                <div class="icono-categoria">💪</div>
+                <div class="nombre-categoria">Artículos de Gym</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-productos" id="productos">
+        <h2 class="titulo-seccion">Productos Destacados</h2>
+        <div class="contenedor-productos" id="contenedor-productos">
+            <div class="tarjeta-producto" data-categoria="pantalones">
+                <div class="imagen-producto">
+                    <button class="boton-favorito">❤️</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaDeportiva/Pantalon_Deportivo_Adicolor_Classics_Firebird_Negro_IJ7055_25_model.avif" class="imagenPantalo">
                 </div>
-                <div class="product-grid">
-                    <div class="product-item"><img src="../img/tiendaDeportiva/Camiseta Dry-Fit.png" alt="Producto 1"><p>Camiseta Dry-Fit</p></div>
-                    <div class="product-item"><img src="../img/tiendaDeportiva/Tank Top Transpirable.png" alt="Producto 2"><p>Tank Top Transpirable</p></div>
-                    <div class="product-item"><img src="../img/tiendaDeportiva//Camiseta de fitness manga corta para Hombre.png" alt="Producto 3" style="height: 55%;margin-top: 20%;"><p>Camiseta de fitness manga corta para Hombre</p></div>
-                    <div class="product-item"><img src="https://i.imgur.com/gHh9A3Y.png" alt="Producto 4"><p>Zapatillas Running</p></div>
-                     <div class="product-item"><img src="https://i.imgur.com/UfBwF4o.png" alt="Producto 5"><p>Bolso de Gimnasio</p></div>
-                     <div class="product-item"><img src="https://i.imgur.com/b9Jg3f5.png" alt="Producto 6"><p>Auriculares Pro</p></div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Pantalón Deportivo Pro</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Negro</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$89.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
                 </div>
             </div>
-        </section>
 
-        <section id="tienda-deportiva-mujer">
-            <h2>Ropa deportiva ♀️</h2>
-            <div class="category-showcase">
-                <div class="main-model">
-                     <img src="https://i.imgur.com/D4s3E7t.png" alt="Modelo Ropa Deportiva Mujer">
+            <div class="tarjeta-producto" data-categoria="pantalones">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/modeloHombreDeportivo.png" class="imagenPantalon">
                 </div>
-                <div class="product-grid">
-                    <div class="product-item"><img src="https://i.imgur.com/c6kP5rQ.png" alt="Producto 1"><p>Conjunto Leggings</p></div>
-                    <div class="product-item"><img src="https://i.imgur.com/p9s7o0F.png" alt="Producto 2"><p>Top Deportivo</p></div>
-                    <div class="product-item"><img src="https://i.imgur.com/Lz2T8R1.png" alt="Producto 3"><p>Shorts con Malla</p></div>
-                    <div class="product-item"><img src="https://i.imgur.com/eT6t9gV.png" alt="Producto 4"><p>Zapatillas Training</p></div>
-                     <div class="product-item"><img src="https://i.imgur.com/o8d4h9r.png" alt="Producto 5"><p>Bolso Rosa Gym</p></div>
-                     <div class="product-item"><img src="https://i.imgur.com/Q2g5Y2W.png" alt="Producto 6"><p>Auriculares In-Ear</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tienda-acuatica">
-            <h2>Tienda Acuática 🌊</h2>
-            <div class="category-showcase">
-                <div class="main-model">
-                    <img src="https://placehold.co/400x600/00b4d8/FFFFFF/png?text=Modelo+Acu%C3%A1tico" alt="Modelo Tienda Acuática">
-                </div>
-                <div class="product-grid">
-                    <div class="product-item"><img src="https://placehold.co/200x200/ef476f/FFFFFF/png?text=Bikini" alt="Traje de baño mujer"><p>Bikini Tropical</p></div>
-                    <div class="product-item"><img src="https://placehold.co/200x200/ffd166/FFFFFF/png?text=Shorts+Hombre" alt="Traje de baño hombre"><p>Shorts de Baño</p></div>
-                    <div class="product-item"><img src="https://placehold.co/200x200/06d6a0/FFFFFF/png?text=Snorkel" alt="Respirador para niños"><p>Kit Snorkel Infantil</p></div>
-                    <div class="product-item"><img src="https://placehold.co/200x200/118ab2/FFFFFF/png?text=Gafas" alt="Gafas de natación"><p>Gafas Natación Pro</p></div>
-                     <div class="product-item"><img src="https://placehold.co/200x200/f78c6b/FFFFFF/png?text=Flotador" alt="Juegos para niños"><p>Flotador Dona</p></div>
-                     <div class="product-item"><img src="https://placehold.co/200x200/5a189a/FFFFFF/png?text=Licra+UV" alt="Ropa acuática"><p>Licra Protección UV</p></div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Pantalón Corto Running</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Azul</span>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$65.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
                 </div>
             </div>
-        </section>
 
-    </main>
+            <div class="tarjeta-producto" data-categoria="pantalones">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/pantalon.png" id="pantalon">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Leggins Fitness</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Gris</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$79.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
 
+            <div class="tarjeta-producto" data-categoria="sueteres">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaDeportiva/sudadera.png" id="sudadera1">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Sudadera con Capucha</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Negro</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$125.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="sueteres">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/chaqueta.png" id="chaqueta">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Chaqueta Deportiva</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Rojo</span>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$149.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="sueteres">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/buzo.png" id="buzo">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Buzo Térmico</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Azul</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$95.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="zapatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    👟
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Tenis Running Elite</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Blanco/Negro</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$299.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="zapatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    👟
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Zapatillas CrossFit</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Gris</span>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$259.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="zapatos">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fa8bff 0%, #2bd2ff 90%);">
+                    <button class="boton-favorito">🤍</button>
+                    👟
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Tenis Training Pro</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Azul</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$189.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="utiles">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/Balón de Fútbol.png" id="juegos">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Balón de Fútbol</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Blanco/Negro</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$89.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="utiles">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaDeportiva/raqueta.png" id="juegos">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Raqueta de Tenis</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Negro/Amarillo</span>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$349.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="utiles">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/kit.png" id="kit">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Kit de Yoga</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Morado</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$129.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="gym">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <span class="etiqueta-nuevo">NUEVO</span>
+                    <img src="../img/tiendaDeportiva/mancuernas-piso-madera.png" id="mancuerna">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Mancuernas Ajustables</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Negro</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$279.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="gym">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/surtido-equipamiento-deportivo-flat-lay.png" id="mancuerna">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Banda de Resistencia Set</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Multicolor</span>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$59.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-categoria="gym">
+                <div class="imagen-producto" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                    <button class="boton-favorito">🤍</button>
+                    <img src="../img/tiendaDeportiva/colchoneta.png" id="mancuerna">
+                </div>
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Colchoneta Fitness</h3>
+                    <div class="detalles-producto">
+                        <span>Color: Azul</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="precio-producto">$79.900</div>
+                    <button class="boton-agregar" onclick="agregarCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie-pagina" id="contacto">
+        <div class="contenedor-pie">
+            <div class="seccion-pie">
+                <h3>Sobre Nosotros</h3>
+                <p>Tienda ADSO es tu tienda deportiva de confianza. Ofrecemos productos de alta calidad para todos los deportistas.</p>
+                <div class="redes-sociales">
+                    <div class="icono-red-social"><img src="../img/index/twitter.png" class="iconos"></div>
+                    <div class="icono-red-social"><img src="../img/index/facebook.png" class="iconos"></div>
+                    <div class="icono-red-social"><img src="../img/index/instagram.png" class="iconos"></div>
+                    <div class="icono-red-social"><img src="../img/index/youtube.png" class="iconos" id="youtube"></div>
+                </div>
+            </div>
+            <div class="seccion-pie">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contactos</a>
+            </div>
+            <div class="seccion-pie">
+                <h3>Contacto</h3>
+                <a>Calle 13 # 3 – 13 Barrio El 12.</p>
+                <a>Fonseca, La Guajira, 47001 Colombia</p>
+                <a href="mailto:Recreacion@adso.com">Recreacion@adso.com</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
